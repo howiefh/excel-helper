@@ -1,5 +1,5 @@
 {
-    "excel": {
+    "excel-helper": {
         "name": "Excel助手",
         "tips": "Excel助手！",
         "noPage": false,
@@ -12,7 +12,7 @@
                 "onClick": function (info, tab) {
                     // alert("你好，我是sharding!");
                     chrome.DynamicToolRunner({
-                        query: "tool=excel"
+                        query: "tool=excel-helper"
                     });
                 }
             }
