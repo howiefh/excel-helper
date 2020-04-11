@@ -1,0 +1,53 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Excel Helper</title>
+</head>
+
+<body>
+	<h4>Single sheet</h4>
+	<input id="headerRow" placeholder="Header row number" title="Header row number" />
+	<button id="import">Import</button>
+	<h4>Merge sheets</h4>
+	<input id="multiHeaderRow" placeholder="Header row number" title="Header row number" />
+	<input id="dateCol" placeholder="Date column header" title="Date column header" value="Date" />
+	<input id="year" placeholder="Supply year" title="Supply year" value="2018." />
+	<button id="multiImport">Import</button>
+	<button id="export">Export Data</button>
+	<button id="exportTable">Export Table</button>
+	<h4>Export JSON Data</h4>
+	<textarea id="json" rows="10" style="width:500px">[ {
+    "日期" : "2019-07-24",
+    "数量" : "4961"
+  }, {
+    "日期" : "2019-07-23",
+    "数量" : "5299"
+  }, {
+    "日期" : "2019-07-22",
+    "数量" : "4767"
+  }, {
+    "日期" : "2019-07-21",
+    "数量" : "5082"
+  }, {
+    "日期" : "2019-07-20",
+    "数量" : "5042"
+  }]</textarea>
+	<button id="exportJson">Export JSON Data</button>
+	<h4>Export Remote Data</h4>
+	<button id="exportRemote">Export Remote</button>
+	<button id="exportRemoteGroupHeader">Export Remote Group Header</button>
+	<div id="container"></div>
+
+	<script src="shim.min.js"></script>
+	<script src="xlsx.full.min.js"></script>
+	<script src="Blob.min.js"></script>
+	<script src="FileSaver.min.js"></script>
+	<script src="excelImporter.js"></script>
+	<script src="excelExporter.js"></script>
+	<script src="index.js"></script>
+</body>
+
+</html>
